@@ -28,7 +28,7 @@ const contents: Content[] = [
 const CardFacility = () => {
     return (
         <div className="flex flex-row flex-wrap gap-5 justify-center">
-            {contents.map((content, index) => (
+            {contents.map((content) => (
                 <Card className="w-full max-w-sm">
                     <CardHeader>
                         <CardTitle>{content.title}</CardTitle>

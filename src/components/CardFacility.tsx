@@ -22,7 +22,7 @@ const contents: Content[] = [
         title: "Photo/Video Analysis After the Lesson",
         description: "After each lesson, we analyze the lesson based on photo/video materials filmed during the lesson."
     },
-     {
+    {
         title: "Lockers for Storing Personal Belongings",
         description: "You can save your items in Lockers for during surfing."
     }
@@ -31,7 +31,7 @@ const contents: Content[] = [
 const CardFacility = () => {
     return (
         <div className="flex flex-row flex-wrap gap-5 justify-center">
-            {contents.map((content) => (
+            {contents.map((content, index) => (
                 <Card className="w-full max-w-sm">
                     <CardHeader>
                         <CardTitle>{content.title}</CardTitle>

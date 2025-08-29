@@ -1,4 +1,5 @@
 import './App.css'
+import AlbumPhotos from './components/AlbumPhotos'
 import BannerSlider from './components/BannerSlider'
 import CardLessons from './components/CardLessons'
 import Description from './components/Description'
@@ -19,6 +20,8 @@ function App() {
         <ListDescription/>
          <h1 className='flex font-kavoon text-2xl justify-center'>Surf Lessons</h1>
          <CardLessons />
+          <h1 className='flex font-kavoon text-2xl justify-center mt-5'>Albums</h1>
+          <AlbumPhotos />
 
       </div>
     </>

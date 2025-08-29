@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { Button } from "./ui/button"
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Images from "./Images";

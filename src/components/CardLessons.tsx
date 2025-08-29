@@ -1,11 +1,12 @@
 import {
     Card,
+    CardAction,
     CardContent,
     CardDescription,
     CardFooter,
     CardHeader,
     CardTitle,
-} from "./ui/card"
+} from "@/components/ui/card"
 
 import { Button } from "./ui/button";
 

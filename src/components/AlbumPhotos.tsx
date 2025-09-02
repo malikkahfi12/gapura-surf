@@ -38,7 +38,7 @@ const AlbumPhotos = () => {
     return (
         <>
             <Images data={data_slides} onClick={(currentIndex) => {setIndex(currentIndex)}} />
-            <Lightbox open={index >= 0} close={()=> setIndex(-1)} slides={data_slides}/>
+            <Lightbox className="cursor-" open={index >= 0} close={()=> setIndex(-1)} slides={data_slides}/>
         </>
 
     )

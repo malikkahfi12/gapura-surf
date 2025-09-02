@@ -7,12 +7,18 @@ import Footer from './components/Footer'
 import FooterInformation from './components/FooterInformation'
 import ListDescription from './components/ListDescription'
 import Navbar from './components/Navbar'
-
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 
 function App() {
   return (
     <>
+      <FloatingWhatsApp  
+      phoneNumber='+6282274985169'
+      accountName='GapuraSurf'
+      chatMessage='Hi There how can we assist you today?'
+      placeholder='Type your message here ...'
+      />
       <Navbar />
       <div className='flex-col items-center justify-center size-full'>
         <BannerSlider />

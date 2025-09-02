@@ -29,7 +29,7 @@ const CardFacility = () => {
     return (
         <div className="flex flex-row flex-wrap gap-5 justify-center">
             {contents.map((content) => (
-                <Card className="w-full max-w-sm">
+                <Card className="w-full max-w-sm" key={content.title}>
                     <CardHeader>
                         <CardTitle>{content.title}</CardTitle>
                         <CardDescription>

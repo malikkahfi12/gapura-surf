@@ -5,8 +5,14 @@ import { Button } from "@/components/ui/button";
 import LanguageSelect from "./LanguageSelect";
 import logo from "../assets/logo.png"
 
+
+
 const Navbar = () => {
+    const link = `https://wa.me/+6282274985169/`;
     const [open, setOpen] = useState(false)
+    const handleClick = () => {
+        window.open(link, '_blank')
+    }
     return (
         <div className='container mx-auto py-6 px-3'>
             <nav className="fixed top-0 left-0 w-full bg-white z-50 flex justify-between items-center py-4 px-6">
@@ -21,7 +27,7 @@ const Navbar = () => {
                 </ul>
                 <div className='lg:flex hidden gap-2'>
                     <LanguageSelect />
-                    <Button className='px-4 py-2 rounded-full text-white'>
+                    <Button className='px-4 py-2 rounded-full text-white' onClick={handleClick}>
                         CONTACT US
                     </Button>
                 </div>

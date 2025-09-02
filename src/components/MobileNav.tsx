@@ -6,6 +6,10 @@ type Open = {
 }
 
 const MobileNav = ({ open } : Open) => {
+    const link = `https://wa.me/+6282274985169/`;
+     const handleClick = () => {
+        window.open(link, '_blank')
+    }
     return (
         <>
             <AnimatePresence>
@@ -24,7 +28,7 @@ const MobileNav = ({ open } : Open) => {
                                 </ul>
                                 <div className='justify-center flex flex-wrap flex-row gap-2'>
                                     <LanguageSelect />
-                                    <button className='px-4 py-2 rounded-full bg-blue-600 text-white'>
+                                    <button className='px-4 py-2 rounded-full bg-blue-600 text-white' onClick={handleClick}>
                                         CONTACT US
                                     </button>
                                 </div>

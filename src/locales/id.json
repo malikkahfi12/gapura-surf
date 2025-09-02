@@ -1,7 +1,15 @@
 {
-  "home": "Beranda",
-  "surf_lessons": "Pelajaran Selancar",
-  "surf_camp": "Kamp Selancar",
-  "gallery": "Galeri",
-  "languange": "Bahasa"
+  "nav": {
+    "home": "BERANDA",
+    "surf_lessons": "PELAJARAN SELANCAR",
+    "about_us": "TENTANG KAMI",
+    "surf_camp": "KAMP SELANCAR",
+    "gallery": "GALERI",
+    "contact_us": "HUBUNGI KAMI",
+    "language": "Bahasa"
+  },
+  "language_options": {
+    "english": "English",
+    "indonesian": "Indonesia"
+  }
 }

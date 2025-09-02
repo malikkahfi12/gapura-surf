@@ -1,7 +1,15 @@
 {
-  "home": "Home",
-  "surf_lessons": "Surf Lessons",
-  "surf_camp": "Surf Camp",
-  "gallery": "Gallery",
-  "languange": "Languange"
+  "nav": {
+    "home": "HOME",
+    "surf_lessons": "SURF LESSONS",
+    "about_us": "ABOUT US",
+    "surf_camp": "SURF CAMP",
+    "gallery": "GALLERY",
+    "contact_us": "CONTACT US",
+    "language": "Language"
+  },
+  "language_options": {
+    "english": "English",
+    "indonesian": "Indonesia"
+  }
 }

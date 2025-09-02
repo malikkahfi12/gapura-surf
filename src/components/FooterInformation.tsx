@@ -18,7 +18,7 @@ const FooterInformation = () => {
                     <p className="text-white font-bold">CONTACT</p>
                     <p className="text-white">+62 822-7498-5169 (Yakob)</p>
                     <p className="text-white">gapura@gmail.com</p>
-                    <p className="text-white">Kuta beach, Front of mamaka hotel, Kec. Kuta, Bali 80361</p>
+                    <p className="text-white">Kuta beach</p>
                 </div>
             </div>
         </div>

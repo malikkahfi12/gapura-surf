@@ -1,12 +1,12 @@
 import { useState } from "react"
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import Images from "./Images";
+import { ScrollArea, ScrollBar } from "./ui/scroll-area";
 
 type Slide = {
     src: string,
-    title : string,
-    description : string
+    title: string,
+    description: string
 }
 
 const data_slides: Slide[] = [
@@ -30,15 +30,38 @@ const data_slides: Slide[] = [
         title: "Title slide 4",
         description: "Description slide 4"
     },
+    {
+        src: "https://images.unsplash.com/photo-1476673661721-ee798b115c3f?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Title slide 4",
+        description: "Description slide 4"
+    },
+    {
+        src: "https://images.unsplash.com/photo-1476673661721-ee798b115c3f?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        title: "Title slide 4",
+        description: "Description slide 4"
+    },
 
 ]
 
 const AlbumPhotos = () => {
     const [index, setIndex] = useState<number>(-1)
+   
     return (
         <>
-            <Images data={data_slides} onClick={(currentIndex) => {setIndex(currentIndex)}} />
-            <Lightbox className="cursor-" open={index >= 0} close={()=> setIndex(-1)} slides={data_slides}/>
+            <ScrollArea className="w-full rounded-md border whitespace-nowrap">
+                <div className="flex w-max space-x-4 p-4">
+                    {
+                        data_slides.map((dataslide, index) => (
+                            <div key={index} className="w-full h-full object-cover rounded-lg" onClick={() => {setIndex(index)}}>
+                                <img className="size-50 sm:size-80 rounded-2xl" src={dataslide.src} alt={dataslide.description} />
+                            </div>
+                        ))
+                    }
+                </div>
+                {/* <Images data={data_slides} onClick={(currentIndex) => { setIndex(currentIndex) }} /> */}
+                <Lightbox className="cursor-pointer" open={index >= 0} index={index} close={() => setIndex(-1)} slides={data_slides} />
+                <ScrollBar orientation="horizontal" />
+            </ScrollArea>
         </>
 
     )
